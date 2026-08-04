@@ -19,7 +19,7 @@ main {
   
 
   & .main-container {
-    max-width: 51.25rem;
+    max-width: 35rem;
   }
   
   & h1 {
@@ -27,6 +27,29 @@ main {
     margin-bottom: 2.5rem;
   }
 }
+
+.header-about {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  & legend {
+    padding: 0;
+    margin: 0;
+  }
+  
+}
+
+.field-row {
+  display: flex;
+  gap: 1rem;
+
+  & .input-wrapper {
+    flex: 1;
+  }
+}
+
+
 
 aside { 
   overflow: hidden;
