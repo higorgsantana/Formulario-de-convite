@@ -24,6 +24,15 @@ textarea::placeholder {
   color: var(--input-placeholder);
 }
 
+input:hover, 
+input:focus,
+textarea:hover,
+textarea:focus {
+  border-color: var(--brand-light);
+  color: var(--text-heading);
+  outline: none;
+}
+
 label {
   font: var(--body-sm);
   color: var(--text-body);
