@@ -99,6 +99,146 @@
             </div>
 
           </fieldset>
+
+          <fieldset class="personalization">
+            <img src="assets/icons/paintbrush-vertical.svg" alt="ícone de um pincel">
+            <legend>Personalização</legend>
+
+            <div class="input-wrapper">
+              <div class="radio-wrapper">
+                <label>Cor principal</label>
+                
+                <input type="radio" name="color" class="color-radio" id="color-blue">
+                <label for="color-blue" class="color-swatch" style="background-color: var(--brand-light);"></label>
+
+                <input type="radio" name="color" class="color-radio" id="color-navy">
+                <label for="color-navy" class="color-swatch" style="background-color: #6A59FF;"></label>
+
+                <input type="radio" name="color" class="color-radio" id="color-purple">
+                <label for="color-purple" class="color-swatch" style="background-color: #B259FF;"></label>
+
+                <input type="radio" name="color" class="color-radio" id="color-fuschia">
+                <label for="color-fuschia" class="color-swatch" style="background-color: #FF59F9;"></label>
+
+                <input type="radio" name="color" class="color-radio" id="color-pink">
+                <label for="color-pink" class="color-swatch" style="background-color: #FF598B;"></label>
+
+                <input type="radio" name="color" class="color-radio" id="color-danger">
+                <label for="color-danger" class="color-swatch" style="background-color: var(--danger);"></label>
+
+                <input type="radio" name="color" class="color-radio" id="color-orange">
+                <label for="color-orange" class="color-swatch" style="background-color: #FF8B59;"></label>
+
+                <input type="radio" name="color" class="color-radio" id="color-yellow">
+                <label for="color-yellow" class="color-swatch" style="background-color: #FFCD59;"></label>
+
+                <input type="radio" name="color" class="color-radio" id="color-lime">
+                <label for="color-lime" class="color-swatch" style="background-color: #E1FF59;"></label>
+
+                <input type="radio" name="color" class="color-radio" id="color-green">
+                <label for="color-green" class="color-swatch" style="background-color: #59FF91;"></label>
+
+                <input type="radio" name="color" class="color-radio" id="color-cyan">
+                <label for="color-cyan" class="color-swatch" style="background-color: #59FFF9;"></label>
+
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="theme">Tema do evento</label>
+              <div class="radio-wrapper">
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="anniversary">
+                  <img src="assets/images/anniversary.jpg" alt="Imagem de um aniversário">
+                  <label for="anniversary">Aniversário</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="children">
+                  <img src="assets/images/infant.jpg" alt="Imagem de festa infantil">
+                  <label for="children">Infantil</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="graduation">
+                  <img src="assets/images/graduation.jpg" alt="Imagem de graduação">
+                  <label for="graduation">Formatura</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="marriage">
+                  <img src="assets/images/marriage.jpg" alt="Imagem de casamento">
+                  <label for="marriage">Formatura</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="baby-shower">
+                  <img src="assets/images/baby-shower.jpg" alt="Imagem de um chá de bebe">
+                  <label for="baby-shower">Chá de bebê</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="bridal-shower">
+                  <img src="assets/images/bridal-shower.jpg" alt="Imagem de um chá de panela">
+                  <label for="bridal-shower">Chá de panela</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="carnival">
+                  <img src="assets/images/carnival.jpg" alt="Imagem de carnaval">
+                  <label for="carnival">Carnaval</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="easter">
+                  <img src="assets/images/easter.jpg" alt="Imagem de páscoa">
+                  <label for="easter">Páscoa</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="sao-joao">
+                  <img src="assets/images/sao-joao.jpg" alt="Imagem de pessoas celebrando o São João">
+                  <label for="sao-joao">São João</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="halloween">
+                  <img src="assets/images/halloween.jpg" alt="Imagem do Halloween">
+                  <label for="halloween">Halloween</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="christmas">
+                  <img src="assets/images/christmas.jpg" alt="Imagem do natal">
+                  <label for="christmas">Natal</label>
+                </div>
+
+                <div class="theme-radio">
+                  <input type="radio" name="theme" id="other">
+                  <img src="assets/images/other.jpg" alt="Imagem de pessoas comemorando">
+                  <label for="other">Outro</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <div class="checkbox-wrapper">
+                <label>Estilo</label>
+                <input type="checkbox" name="dark-mode" id="dark">
+                <label for="dark">Escuro</label>
+              </div>              
+            
+
+              <div class="file-wrapper">
+                <label>Foto de capa</label>
+                <input type="file" name="cover" id="cover">
+                <label for="cover">Selecionar</label>
+                <img src="assets/icons/upload.svg" alt="ícone para upload">
+                <p>Nenhum arquivo selecionado</p>
+              </div>
+            </div>
+              
+          </fieldset>
         </form>
       </div>
     </main>
