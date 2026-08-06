@@ -18,7 +18,7 @@
 
         <form method="post" enctype="multipart/form-data">
           <fieldset class="about">
-            <div class="header-about">
+            <div class="header">
               <img src="assets/icons/calendar.svg" alt="icone de calendário">
               <legend>Sobre o evento</legend>
             </div>
@@ -101,52 +101,76 @@
           </fieldset>
 
           <fieldset class="personalization">
-            <img src="assets/icons/paintbrush-vertical.svg" alt="ícone de um pincel">
-            <legend>Personalização</legend>
-
+            <div class="header">
+              <img src="assets/icons/paintbrush-vertical.svg" alt="ícone de um pincel">
+              <legend>Personalização</legend>
+            </div>
+            
             <div class="input-wrapper">
-              <div class="radio-wrapper">
-                <label>Cor principal</label>
+              <label>Cor principal</label>
+              <div class="radio-wrapper color-wrapper">  
                 
                 <input type="radio" name="color" class="color-radio" id="color-blue">
-                <label for="color-blue" class="color-swatch" style="background-color: var(--brand-light);"></label>
+                <label for="color-blue" class="color-swatch">
+                  <span class="color-fill" style="background-color: var(--brand-light);"></span>
+                </label>
 
                 <input type="radio" name="color" class="color-radio" id="color-navy">
-                <label for="color-navy" class="color-swatch" style="background-color: #6A59FF;"></label>
+                <label for="color-navy" class="color-swatch">
+                  <span class="color-fill" style="background-color: #6A59FF;"></span>
+                </label>
 
                 <input type="radio" name="color" class="color-radio" id="color-purple">
-                <label for="color-purple" class="color-swatch" style="background-color: #B259FF;"></label>
+                <label for="color-purple" class="color-swatch" >
+                  <span class="color-fill" style="background-color: #B259FF;"></span>
+                </label>
 
                 <input type="radio" name="color" class="color-radio" id="color-fuschia">
-                <label for="color-fuschia" class="color-swatch" style="background-color: #FF59F9;"></label>
+                <label for="color-fuschia" class="color-swatch">
+                  <span class="color-fill" style="background-color: #FF59F9;"></span>
+                </label>
 
                 <input type="radio" name="color" class="color-radio" id="color-pink">
-                <label for="color-pink" class="color-swatch" style="background-color: #FF598B;"></label>
+                <label for="color-pink" class="color-swatch">
+                  <span class="color-fill" style="background-color: #FF598B;"></span>
+                </label>
 
                 <input type="radio" name="color" class="color-radio" id="color-danger">
-                <label for="color-danger" class="color-swatch" style="background-color: var(--danger);"></label>
+                <label for="color-danger" class="color-swatch">
+                  <span class="color-fill" style="background-color: var(--danger);"></span>
+                </label>
 
                 <input type="radio" name="color" class="color-radio" id="color-orange">
-                <label for="color-orange" class="color-swatch" style="background-color: #FF8B59;"></label>
+                <label for="color-orange" class="color-swatch">
+                  <span class="color-fill" style="background-color: #FF8B59;"></span>
+                </label>
 
                 <input type="radio" name="color" class="color-radio" id="color-yellow">
-                <label for="color-yellow" class="color-swatch" style="background-color: #FFCD59;"></label>
+                <label for="color-yellow" class="color-swatch">
+                  <span class="color-fill" style="background-color: #FFCD59;"></span>
+                </label>
 
                 <input type="radio" name="color" class="color-radio" id="color-lime">
-                <label for="color-lime" class="color-swatch" style="background-color: #E1FF59;"></label>
+                <label for="color-lime" class="color-swatch">
+                  <span class="color-fill" style="background-color: #E1FF59;"></span>
+                </label>
 
                 <input type="radio" name="color" class="color-radio" id="color-green">
-                <label for="color-green" class="color-swatch" style="background-color: #59FF91;"></label>
+                <label for="color-green" class="color-swatch">
+                  <span class="color-fill" style="background-color: #59FF91;"></span>
+                </label>
 
                 <input type="radio" name="color" class="color-radio" id="color-cyan">
-                <label for="color-cyan" class="color-swatch" style="background-color: #59FFF9;"></label>
+                <label for="color-cyan" class="color-swatch">
+                  <span class="color-fill" style="background-color: #59FFF9;"></span>
+                </label>
 
               </div>
             </div>
 
             <div class="input-wrapper">
               <label for="theme">Tema do evento</label>
-              <div class="radio-wrapper">
+              <div class="theme-wrapper">
                 <div class="theme-radio">
                   <input type="radio" name="theme" id="anniversary">
                   <img src="assets/images/anniversary.jpg" alt="Imagem de um aniversário">
@@ -222,13 +246,14 @@
             </div>
 
             <div class="input-wrapper">
+              <label>Estilo</label>
               <div class="checkbox-wrapper">
-                <label>Estilo</label>
-                <input type="checkbox" name="dark-mode" id="dark">
-                <label for="dark">Escuro</label>
-              </div>              
+                <input type="checkbox" class="toggle-checkbox" name="dark-mode" id="dark">
+                <label for="dark" class="toggle-switch">Escuro</label>
+              </div>
+            </div>              
             
-
+            <div class="input-wrapper">
               <div class="file-wrapper">
                 <label>Foto de capa</label>
                 <input type="file" name="cover" id="cover">
@@ -237,6 +262,7 @@
                 <p>Nenhum arquivo selecionado</p>
               </div>
             </div>
+              
               
           </fieldset>
         </form>
