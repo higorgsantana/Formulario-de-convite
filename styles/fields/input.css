@@ -50,7 +50,8 @@ input[type="datetime-local"] {
 }
 
 input[type="radio"],
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="file"] {
   position: absolute;
   width: 1px;
   height: 1px;

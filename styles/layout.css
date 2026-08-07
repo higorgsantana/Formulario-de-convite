@@ -61,7 +61,7 @@ main {
 
 .field-row {
   display: flex;
-  gap: 1rem;
+  gap: .75rem;
 
   & .input-wrapper {
     flex: 1;

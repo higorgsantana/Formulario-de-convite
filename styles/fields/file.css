@@ -1,0 +1,44 @@
+.file-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 23rem;
+  gap: .75rem;
+
+  & label {
+    margin-bottom: 0;
+  }
+
+  & .file-actions {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    gap: .75rem;
+
+    & .file-button {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      height: 2.5rem;
+      border-radius: .5rem;
+      background-color: var(--shape-button);
+      gap: .5rem;
+      padding: .25rem .75rem;
+      cursor: pointer;
+      font: var(--body-sm-semibold);
+      color: var(--text-heading);
+    }
+
+    & p {
+      font: var(--body-md);
+      color: var(--input-placeholder);
+      margin: 0;
+    }
+  }
+
+  & img {
+    width: 1rem;
+    height: 1rem;
+    filter: invert(69%) sepia(36%) saturate(3145%) hue-rotate(181deg) brightness(99%) contrast(104%);
+  }
+}
+

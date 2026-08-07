@@ -245,25 +245,28 @@
               </div>
             </div>
 
-            <div class="input-wrapper">
-              <label>Estilo</label>
-              <div class="checkbox-wrapper">
-                <input type="checkbox" class="toggle-checkbox" name="dark-mode" id="dark">
-                <label for="dark" class="toggle-switch">Escuro</label>
-              </div>
+            <div class="field-row">        
+                <div class="checkbox-wrapper input-wrapper">
+                  <label>Estilo</label>
+                  <input type="checkbox" class="toggle-checkbox" name="dark-mode" id="dark">
+                  <label for="dark" class="toggle-switch">
+                    <span class="label-dark">Escuro</span>
+                    <span class="label-light">Claro</span>
+                  </label>              
+                </div>       
+              
+                <div class="file-wrapper input-wrapper">
+                  <label>Foto de capa</label>
+                  <input type="file" name="cover" id="cover">
+                  <div class="file-actions">
+                    <label for="cover" class="file-button">
+                      <img src="assets/icons/upload.svg" alt="ícone para upload">
+                      Selecionar
+                    </label>            
+                    <p>Nenhum arquivo selecionado</p>
+                  </div>
+                </div>
             </div>              
-            
-            <div class="input-wrapper">
-              <div class="file-wrapper">
-                <label>Foto de capa</label>
-                <input type="file" name="cover" id="cover">
-                <label for="cover">Selecionar</label>
-                <img src="assets/icons/upload.svg" alt="ícone para upload">
-                <p>Nenhum arquivo selecionado</p>
-              </div>
-            </div>
-              
-              
           </fieldset>
         </form>
       </div>
