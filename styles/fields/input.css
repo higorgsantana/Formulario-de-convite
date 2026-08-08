@@ -62,5 +62,30 @@ input[type="file"] {
   white-space: nowrap;
   border: 0;
 }
-      
+
+
+input[required] + .error {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+
+  font: var(--body-sm);
+  color: var(--danger);
+
+  margin-top: .25rem;
+}
+
+input[required]:valid + .error {
+  display: none;
+}
+
+input[required]:not(:focus):invalid {
+  border-color: var(--danger);
+}
+
+.error img{
+  width: 1rem;
+  height: 1rem;
+  filter: invert(50%) sepia(65%) saturate(4323%) hue-rotate(331deg) brightness(120%) contrast(117%);
+}
 
